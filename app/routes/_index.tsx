@@ -19,7 +19,13 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+
+
 export default function Index() {
+
+  const inputProps = {
+    step: 300,
+  };
   return (
     <Container maxWidth="xl">
       <Grid container spacing={6}>
@@ -41,6 +47,7 @@ export default function Index() {
               id="filled-hidden-label-small"
               variant="filled"
               size="small"
+              inputProps={inputProps} 
             />
             <TextField
               hiddenLabel

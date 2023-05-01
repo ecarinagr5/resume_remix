@@ -213,11 +213,11 @@ function Index() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_Container.default, { maxWidth: "xl", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_Grid.default, { container: !0, spacing: 6, children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_Grid.default, { item: !0, xs: !0, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Item, { children: "xs" }, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 27,
+      lineNumber: 33,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 26,
+      lineNumber: 32,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_Grid.default, { item: !0, xs: 6, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
@@ -237,13 +237,16 @@ function Index() {
               hiddenLabel: !0,
               id: "filled-hidden-label-small",
               variant: "filled",
-              size: "small"
+              size: "small",
+              inputProps: {
+                step: 300
+              }
             },
             void 0,
             !1,
             {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 39,
+              lineNumber: 45,
               columnNumber: 13
             },
             this
@@ -260,7 +263,7 @@ function Index() {
             !1,
             {
               fileName: "app/routes/_index.tsx",
-              lineNumber: 45,
+              lineNumber: 52,
               columnNumber: 13
             },
             this
@@ -271,37 +274,37 @@ function Index() {
       !0,
       {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 30,
+        lineNumber: 36,
         columnNumber: 11
       },
       this
     ) }, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 29,
+      lineNumber: 35,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_Grid.default, { item: !0, xs: !0, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Item, { children: "xs" }, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 54,
+      lineNumber: 61,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 53,
+      lineNumber: 60,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 25,
+    lineNumber: 31,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 24,
+    lineNumber: 30,
     columnNumber: 5
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "ed47d5be", entry: { module: "/build/entry.client-2ONYD5N2.js", imports: ["/build/_shared/chunk-GZMNNEXQ.js", "/build/_shared/chunk-VKRUHKJ5.js", "/build/_shared/chunk-EETRBLDB.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-C4TTBS5H.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-NNE4P6ST.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-ED47D5BE.js" };
+var assets_manifest_default = { version: "815c4861", entry: { module: "/build/entry.client-2ONYD5N2.js", imports: ["/build/_shared/chunk-GZMNNEXQ.js", "/build/_shared/chunk-VKRUHKJ5.js", "/build/_shared/chunk-EETRBLDB.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-C4TTBS5H.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-CYRFZFDT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-815C4861.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { unstable_cssModules: !1, unstable_cssSideEffectImports: !1, unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, unstable_vanillaExtract: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
