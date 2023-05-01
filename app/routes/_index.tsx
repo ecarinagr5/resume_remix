@@ -20,9 +20,17 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const inputProps = {
+const inputProps:any = {
   step: 300,
+  inputMode:'text', 
+  pattern:`[0-9]*`
 };
+
+const handleKeyDown = (e:React.KeyboardEvent<HTMLDivElement>):void => {
+  if(e.key === 'Enter' || e.code === 'Enter') {
+    e.preventDefault();
+  }
+}
 
   return (
 <Container maxWidth="xl">
@@ -43,9 +51,10 @@ const inputProps = {
             <TextField
               hiddenLabel
               id="filled-hidden-label-small"
-              variant="filled"
               size="small"
               inputProps={inputProps} 
+              placeholder={`name`}
+              onKeyDown={handleKeyDown}
             />
             <TextField
               hiddenLabel
